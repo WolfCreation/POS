@@ -1,7 +1,10 @@
 package lk.ijse.model;
 
+import org.apache.catalina.LifecycleState;
+
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * Created by SL_WOLF on 5/15/2018.
@@ -16,6 +19,7 @@ public class Customer implements Serializable {
     private String name;
     private String contact;
     private String address;
+
 
     public Customer() {
 
@@ -35,6 +39,7 @@ public class Customer implements Serializable {
     }
 
 
+
     public int getCid() {
         return cid;
     }
@@ -42,7 +47,6 @@ public class Customer implements Serializable {
     public void setCid(int cid) {
         this.cid = cid;
     }
-
 
     public String getName() {
         return name;
@@ -52,7 +56,6 @@ public class Customer implements Serializable {
         this.name = name;
     }
 
-
     public String getContact() {
         return contact;
     }
@@ -60,7 +63,6 @@ public class Customer implements Serializable {
     public void setContact(String contact) {
         this.contact = contact;
     }
-
 
     public String getAddress() {
         return address;
